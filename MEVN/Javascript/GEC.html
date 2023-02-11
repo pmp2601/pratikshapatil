@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <p id="test"></p>
+        <script>
+            var x=10;
+            function foo()
+            {
+                var y=20;
+
+                function bar()
+                {
+                    var z=15;
+                    var out = x+y+z;
+                    return out;
+                }
+            
+            return bar;
+            document.getElementById('test').innerHTML=bar;
+        }
+        </script>
+    </body>
+</html>
